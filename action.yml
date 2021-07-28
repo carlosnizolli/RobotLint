@@ -4,7 +4,6 @@ branding:
   icon: 'check-square'  
   color: 'green'
   
-steps:
 - uses: actions/checkout@v2
 - name: Set up Python
   uses: actions/setup-python@v2
