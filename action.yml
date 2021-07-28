@@ -1,9 +1,4 @@
-name: 'Robot Framework Lint'
-description: 'Run lint for Robot Framework'
-branding:
-  icon: 'check-square'  
-  color: 'green'
-  
+
 - name: Set up Python
   uses: actions/setup-python@v2
   with:
