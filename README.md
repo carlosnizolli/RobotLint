@@ -12,8 +12,8 @@ Replace ${{ github.workspace }} with the path of your tests and resources
 
 Examples:
      
-     rflint Robot/tests
+     ROBOT_DIR: Robot/tests
      
-     rflint Robot/tests Robot/resources
+     ROBOT_DIR: Robot/tests Robot/resources
      
-     rflint ${{ github.workspace }}/Testes
+     ROBOT_DIR: ${{ github.workspace }}/Testes
