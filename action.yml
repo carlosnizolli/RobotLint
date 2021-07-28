@@ -16,5 +16,12 @@ steps:
      pip3 install robotframework-lint
             
 - name: Execute Lint
-  run: |
-     rflint ${{ github.workspace }}
+  - run: |
+    # make file runnable, might not be necessary
+    chmod +x "${{ github.workspace }}/script.sh"
+    # run script
+    "${{ github.workspace }}/script.sh"
+     
+     
+     
+     
