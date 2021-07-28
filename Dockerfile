@@ -11,6 +11,6 @@ COPY bin/rflint.sh /opt/robotframework/bin/
 
 ENV PATH=/opt/robotframework/bin:/opt/robotframework/drivers:$PATH
 
-WORKDIR ${ROBOT_DIR} 
+WORKDIR /opt/robotframework/bin/
 
 CMD ["rflint.sh"]
