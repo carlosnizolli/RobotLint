@@ -3,18 +3,19 @@ description: 'Run lint for Robot Framework'
 branding:
   icon: 'check-square'  
   color: 'green'
-- name: Set up Python
-  uses: actions/setup-python@v2
-  with:
-      python-version: '3.x'
-- name: Install dependencies
-  run: |
-     sudo apt-get -y install python3-pip
-     pip3 install robotframework-lint
-- name: Execute Lint
-  run: |
-    chmod +x script.sh
-    script.sh          
+    - uses: actions/checkout@v2  
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+          python-version: '3.x'
+    - name: Install dependencies
+      run: |
+         sudo apt-get -y install python3-pip
+         pip3 install robotframework-lint
+    - name: Execute Lint
+      run: |
+        chmod +x script.sh
+        script.sh          
 
      
      
