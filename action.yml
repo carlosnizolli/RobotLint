@@ -1,23 +1,15 @@
-name: Robot Framework Lint
-
-on:
-  pull_request:
-    branches: [ homol ]
-
-jobs:
-   Lint:
-        runs-on: ubuntu-latest
-        steps:
-        - uses: actions/checkout@v2
-        - name: Set up Python
-          uses: actions/setup-python@v2
-          with:
-            python-version: '3.x'
-        - name: Install dependencies
-          run: |
-            sudo apt-get -y install python3-pip
-            pip3 install robotframework-lint
+runs-on: ubuntu-latest
+steps:
+- uses: actions/checkout@v2
+- name: Set up Python
+  uses: actions/setup-python@v2
+  with:
+      python-version: '3.x'
+- name: Install dependencies
+  run: |
+     sudo apt-get -y install python3-pip
+     pip3 install robotframework-lint
             
-        - name: Execute Lint
-          run: |
-             rflint ${{ github.workspace }}
+- name: Execute Lint
+  run: |
+     rflint ${{ github.workspace }}
