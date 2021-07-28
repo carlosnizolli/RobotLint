@@ -3,7 +3,6 @@ description: 'Run lint for Robot Framework'
 branding:
   icon: 'check-square'  
   color: 'green'
-  
 - uses: actions/checkout@v2
 - name: Set up Python
   uses: actions/setup-python@v2
