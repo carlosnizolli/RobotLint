@@ -3,7 +3,12 @@ description: 'Run lint for Robot Framework'
 branding:
   icon: 'check-square'  
   color: 'green'
-
+  
+inputs:
+  robot-files:
+    description: 'The source (.robot) file'
+    required: true
+    
 runs:
   using: "docker"
   image: "Dockerfile"
