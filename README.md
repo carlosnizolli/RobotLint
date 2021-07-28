@@ -4,7 +4,7 @@ Static analysis for robot framework plain text files.
 
 ## How to use
     - name: Robot Framework Lint
-      uses: nizolli/RobotLint@v2.0
+      uses: nizolli/RobotLint@v3.0
       with
         ROBOT_DIR: ${{ github.workspace }}
   
