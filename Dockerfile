@@ -7,9 +7,10 @@ RUN mkdir -p ${ROBOT_DIR}
 
 RUN pip3 install robotframework-lint
 
-COPY script.sh /opt/robotframework
+COPY bin/rflint.sh /opt/robotframework/bin/
 
-ENV PATH=/opt/robotframework:/opt/robotframework/drivers:$PATH
+ENV PATH=/opt/robotframework/bin:/opt/robotframework/drivers:$PATH
 
+WORKDIR ${ROBOT_DIR} 
 
-CMD ["script.sh"]
+CMD ["rflint.sh"]
