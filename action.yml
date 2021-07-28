@@ -1,5 +1,3 @@
-name: 'Robot Framework Lint'
-description: 'Run Lint for Robot Framework'
 steps:
 - uses: actions/checkout@v2
 - name: Set up Python
