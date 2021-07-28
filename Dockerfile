@@ -9,4 +9,4 @@ RUN pip3 install robotframework-lint
 
 COPY script.sh /opt/robotframework
 
-CMD ["script.sh"]
+CMD ["./script.sh"]
