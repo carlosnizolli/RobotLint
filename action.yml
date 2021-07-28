@@ -2,10 +2,12 @@ name: 'Robot Framework Lint'
 description: 'Run lint for Robot Framework'
 branding:
   icon: 'check-square'  
-  color: 'green'- name: Set up Python
-uses: actions/setup-python@v2
-with:
-   python-version: '3.x'
+  color: 'green'
+  
+- name: Set up Python
+  uses: actions/setup-python@v2
+  with:
+     python-version: '3.x'
 - name: Install dependencies
   run: |
      sudo apt-get -y install python3-pip
