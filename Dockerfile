@@ -9,6 +9,4 @@ RUN pip3 install robotframework-lint
 
 COPY bin/rflint.sh /opt/robotframework/bin/
 
-WORKDIR /bin/
-
-CMD ["rflint.sh"]
+CMD ["./rflint.sh"]
