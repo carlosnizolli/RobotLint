@@ -15,7 +15,7 @@ branding:
      pip3 install robotframework-lint
             
 - name: Execute Lint
-  - run: |
+  run: |
     chmod +x "${{ github.workspace }}/script.sh"
     "${{ github.workspace }}/script.sh"
      
