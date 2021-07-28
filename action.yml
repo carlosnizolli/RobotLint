@@ -16,9 +16,7 @@ branding:
             
 - name: Execute Lint
   - run: |
-    # make file runnable, might not be necessary
     chmod +x "${{ github.workspace }}/script.sh"
-    # run script
     "${{ github.workspace }}/script.sh"
      
      
