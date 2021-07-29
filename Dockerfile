@@ -2,6 +2,7 @@
 FROM python:3.7-alpine
 
 RUN pip3 install robotframework-lint
+COPY . .
 
 COPY rflint.sh /rflint.sh
 
