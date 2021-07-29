@@ -8,9 +8,9 @@ Static analysis for robot framework plain text files.
         - name: Robot Framework Lint
           uses: carlosnizolli/RobotLint@v1.1
           with:
-             robot-files: Resources
+             robot-files: RobotFolder
   
-Replace Resources with the path of your tests and resources (.robot)
+Replace "RobotFolder" with the path of your tests and resources (folders containing .robot files)
 
 Examples:
      
