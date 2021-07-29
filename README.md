@@ -3,17 +3,19 @@
 Static analysis for robot framework plain text files.
 
 ## How to use
-    - name: Robot Framework Lint
-      uses: nizolli/RobotLint@v3.0
-      with
-        ROBOT_DIR: ${{ github.workspace }}
+
+        - uses: actions/checkout@v2
+        - name: Robot Framework Lint
+          uses: carlosnizolli/RobotLint@main
+          with:
+             robot-files: Resources
   
-Replace ${{ github.workspace }} with the path of your tests and resources
+Replace Resources with the path of your tests and resources (.robot)
 
 Examples:
      
-     ROBOT_DIR: Robot/tests
+     robot-files: Robot/tests
      
-     ROBOT_DIR: Robot/tests Robot/resources
+     robot-files:: tests resources
      
-     ROBOT_DIR: ${{ github.workspace }}/Testes
+     robot-files:: Tests
