@@ -19,3 +19,28 @@ Examples:
      robot-files:: tests resources
      
      robot-files:: Tests
+
+## List of Rules
+
+        E DuplicateKeywordNames
+        E DuplicateSettingsInResource
+        E DuplicateSettingsInSuite
+        E DuplicateTestNames
+        W DuplicateVariablesInResource
+        W DuplicateVariablesInSuite
+        W FileTooLong
+        W InvalidTable
+        W InvalidTableInResource
+        W LineTooLong
+        W PeriodInSuiteName
+        W PeriodInTestName
+        E RequireKeywordDocumentation
+        W RequireSuiteDocumentation
+        E RequireTestDocumentation
+        E TagWithSpaces
+        W TooFewKeywordSteps
+        W TooFewTestSteps
+        W TooManyTestCases
+        W TooManyTestSteps
+        W TrailingBlankLines
+        W TrailingWhitespace
