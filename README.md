@@ -6,7 +6,7 @@ Static analysis for robot framework plain text files.
 
         - uses: actions/checkout@v2
         - name: Robot Framework Lint
-          uses: carlosnizolli/RobotLint@main
+          uses: carlosnizolli/RobotLint@v1.1
           with:
              robot-files: Resources
   
