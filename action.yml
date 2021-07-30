@@ -11,8 +11,11 @@ inputs:
     
   configure-rule:
     description: 'Configure a rule'
-    required: false    
-
+    required: false 
+    
+  ignore-rule:
+    description: 'Ignore the given RULENAME'
+    required: false  
     
 runs:
   using: "docker"
@@ -20,6 +23,7 @@ runs:
   args:
     - ${{ inputs.robot-files }}
     - ${{ inputs.configure-rule }} 
+    - ${{ inputs.ignore-rule }} 
      
      
      
