@@ -12,10 +12,7 @@ inputs:
   configure-rule:
     description: 'Configure a rule'
     required: false    
-   
-  recursively:
-    description: 'Recursively scan subfolders in a directory'
-    required: false  
+
     
 runs:
   using: "docker"
