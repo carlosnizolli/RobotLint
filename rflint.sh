@@ -1,9 +1,6 @@
 #!/bin/sh
 
-echo $1 
-echo $2 
-
-if ([ -n "$2" ] or [ ! -z "$2" ]).
+if ([ -n "$2" ] or [ ! -z "$2" ])
 then
     rflint --recursive $1 
 else
