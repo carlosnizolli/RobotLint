@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ -v $2 ]
+if [ -n $2 ]
 then
     rflint --recursive $1 
 else
