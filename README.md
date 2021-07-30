@@ -6,7 +6,7 @@ Static analysis for robot framework plain text files.
 
         - uses: actions/checkout@v2
         - name: Robot Framework Lint
-          uses: carlosnizolli/RobotLint@v2.0
+          uses: carlosnizolli/RobotLint@v3.0
           with:
              robot-files: Directory
   
@@ -103,7 +103,7 @@ Recursively scan subfolders in a directory
 
 Configuration example
 
-          uses: carlosnizolli/RobotLint@v2.0
+          uses: carlosnizolli/RobotLint@v3.0
           with:
              robot-files: RobotFolder
              configure-rule: LineTooLong:50 TooManyTestSteps:5
@@ -112,7 +112,7 @@ Configuration example
 
 Example
 
-          uses: carlosnizolli/RobotLint@v2.0
+          uses: carlosnizolli/RobotLint@v3.0
           with:
              robot-files: RobotFolder
              ignore-rule: RequireKeywordDocumentation
