@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ "$2" -eq "" ]
+if [ -z "$2" ]
 then
     rflint --recursive $1 
 else
