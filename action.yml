@@ -19,7 +19,7 @@ runs:
   image: "Dockerfile"
   args:
     - ${{ inputs.robot-files }}
-     
+    - ${{ inputs.configure-rule }} 
      
      
      
