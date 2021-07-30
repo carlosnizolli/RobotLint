@@ -107,3 +107,12 @@ Configuration example
           with:
              robot-files: RobotFolder
              configure-rule: LineTooLong:50 TooManyTestSteps:5
+             
+ ### Ignore a Rule
+
+Example
+
+          uses: carlosnizolli/RobotLint@v2.0
+          with:
+             robot-files: RobotFolder
+             ignore-rule: RequireKeywordDocumentation
