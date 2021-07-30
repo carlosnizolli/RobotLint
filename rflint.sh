@@ -5,6 +5,7 @@ then
     rflint --recursive $1 
     
 elif ([ ! -z "$2" ] && [ -z "$3" ])
+then
     rflint --recursive --configure $2 $1
     
 else
