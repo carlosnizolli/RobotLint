@@ -6,7 +6,7 @@ Static analysis for robot framework plain text files.
 
         - uses: actions/checkout@v2
         - name: Robot Framework Lint
-          uses: carlosnizolli/RobotLint@v2.2
+          uses: carlosnizolli/RobotLint@v2.3
           with:
              robot-files: Directory
   
@@ -103,7 +103,7 @@ Recursively scan subfolders in a directory
 
 Configuration example
 
-          uses: carlosnizolli/RobotLint@v2.2
+          uses: carlosnizolli/RobotLint@v2.3
           with:
              robot-files: RobotFolder
              configure-rule: LineTooLong:50 TooManyTestSteps:5
@@ -112,7 +112,29 @@ Configuration example
 
 Example
 
-          uses: carlosnizolli/RobotLint@v2.2
+          uses: carlosnizolli/RobotLint@v2.3
           with:
              robot-files: RobotFolder
              ignore-rule: RequireKeywordDocumentation
+
+ ### Argument files
+ Argument files are a convenient way to create a set of rules and rule configurations that you want to apply to your files.
+ 
+           
+          uses: carlosnizolli/RobotLint@v2.3
+          with:
+             robot-files: RobotFolder
+             arguments-file: arguments.txt
+             
+You can put arguments one per line in a file             
+Example:
+          
+        --recursive
+        --ignore TrailingWhitespace
+        --ignore TooManyTestSteps 
+        --ignore LineTooLong 
+        --ignore TooFewKeywordSteps
+        --configure LineTooLong:80
+        --warning RequireKeywordDocumentation
+
+OBS: Argument file overwrites other rules
