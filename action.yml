@@ -17,6 +17,10 @@ inputs:
     description: 'Ignore the given RULENAME'
     required: false  
     
+  argument-file:
+    description: 'Read arguments from the given file'
+    required: false  
+    
 runs:
   using: "docker"
   image: "Dockerfile"
@@ -24,6 +28,7 @@ runs:
     - ${{ inputs.robot-files }}
     - ${{ inputs.configure-rule }} 
     - ${{ inputs.ignore-rule }} 
+    - ${{ inputs.argument-file }} 
      
      
      
