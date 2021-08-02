@@ -17,7 +17,7 @@ inputs:
     description: 'Ignore the given RULENAME'
     required: false  
     
-  argument-file:
+  arguments-file:
     description: 'Read arguments from the given file'
     required: false  
     
@@ -28,7 +28,7 @@ runs:
     - ${{ inputs.robot-files }}
     - ${{ inputs.configure-rule }} 
     - ${{ inputs.ignore-rule }} 
-    - ${{ inputs.argument-file }} 
+    - ${{ inputs.arguments-file }} 
      
      
      
