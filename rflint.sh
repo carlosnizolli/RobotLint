@@ -18,5 +18,6 @@ then
     rflint --recursive --ignore $3 --configure $2 $1
     
 elif [ ! -z "$4" ]
+then
     rflint --argumentfile $4 $1
 fi
