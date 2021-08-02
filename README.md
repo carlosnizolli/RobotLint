@@ -136,5 +136,6 @@ Example:
         --ignore TooFewKeywordSteps
         --configure LineTooLong:80
         --warning RequireKeywordDocumentation
+        --error TooManyTestSteps
 
 OBS: Argument file overwrites other rules
