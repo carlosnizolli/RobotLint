@@ -1,6 +1,6 @@
 # RobotLint
 
-Static analysis for robot framework plain text files.
+Static analysis for robot framework plain text files using [robotframework-lint](https://pypi.org/project/robotframework-lint/) 
 
 ## How to use
 
