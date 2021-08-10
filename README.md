@@ -16,9 +16,9 @@ Examples:
      
      robot-files: Robot/tests.robot
      
-     robot-files:: Directory1 Directory2
+     robot-files: Directory1 Directory2
      
-     robot-files:: Directory1 Directory/resource.robot
+     robot-files: Directory1 Directory/resource.robot
      
 Recursively scan subfolders in a directory
 
